@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCA RESTAURANT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header class = "header">
+        <img src = "logo.png" alt="COCA Restaurant Logo" style="max-width: 150px;">
+        <h1>Welcome to COCA Restaurant</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#promotions">Special Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <h3>Starters</h3>
+            <ol>
+                <li>
+                    Cheese Barbecue Pizza
+                    <ul>
+                        <li>Thin crust pizza with cheese</li>
+                        <li>Served with a side of garlic bread</li>
+                        <li>Price: $12.99</li>
+                    </ul>
+                    </li>
+
+                    <li> Spring Roll
+                    <ul>
+                        <li>Crispy vegetable rolls</li>
+                        <li>Served with sweet chili sauce</li>
+                        <li>Price: $8.99</li>
+                    </ul>
+                </li>
+                <li>
+                    Chicken Satay
+                    <ul>
+                        <li>Grilled chicken skewers</li>
+                        <li>Peanut sauce accompaniment</li>
+                        <li>Price: $9.99</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Main Courses</h3>
+            <ol>
+                <li>
+                    Pad Thai
+                    <ul>
+                        <li>Stir-fried rice noodles</li>
+                        <li>Choice of shrimp, chicken, or tofu</li>
+                        <li>Price: $14.99</li>
+                    </ul>
+                </li>
+                <li>
+                    Green Curry
+                    <ul>
+                        <li>Spicy coconut curry</li>
+                        <li>Served with jasmine rice</li>
+                        <li>Price: $15.99</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Desserts</h3>
+            <ol>
+                <li>
+                    Mango Sticky Rice
+                    <ul>
+                        <li>Sweet glutinous rice</li>
+                        <li>Fresh mango slices</li>
+                        <li>Price: $7.99</li>
+                    </ul>
+                    <img src="mango sticky rice.jpg" alt="Mango Sticky Rice" class="dessert-img" onclick="showLargeImage()">
+                </li>
+
+                <li>
+                    Ice Cream
+                    <ul>
+                        <li>Creamy ice cream</li>
+                        <li>Vanilla/ Chocolate ice cream with toppings</li>
+                        <li>Price: $5.99</li>
+                    </ul>
+                    <img src="ice cream.jpg" alt="ice cream" class="dessert-img" onclick="showLargeImage()">
+                </li>
+            </ol>
+        </section>
+
+        <!-- Promotions Section -->
+        <section id="promotions" class="promotions-section">
+            <h2>Special Offers</h2>
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Original Price</th>
+                    <th>Discounted Price</th>
+                    <th>Stock Availability</th>
+                </tr>
+                <tr>
+                    <td>Pad Thai Combo</td>
+                    <td>$18.99</td>
+                    <td>$15.99</td>
+                    <td>20 available</td>
+                </tr>
+                <tr>
+                    <td>Curry Special</td>
+                    <td>$20.99</td>
+                    <td>$17.99</td>
+                    <td>15 available</td>
+                </tr>
+                <tr>
+                    <td>Dessert Bundle</td>
+                    <td>$12.99</td>
+                    <td>$9.99</td>
+                    <td>10 available</td>
+                </tr>
+            </table>
+        </section>
+
+        <script>
+            function showLargeImage() {
+                document.querySelector('.dessert-img-large').style.display = 'block';
+                document.querySelector('.overlay').style.display = 'block';
+            }
+    
+            function hideLargeImage() {
+                document.querySelector('.dessert-img-large').style.display = 'none';
+                document.querySelector('.overlay').style.display = 'none';
+            }
+        </script>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Flavor Street, Food City, Jalandhar</p>
+            <p>Phone: 90418 06535</p>
+            <p>Email: info@cocarestaurant.com</p>
+            <p>Hours: Sun - Sat, 11:00 AM - 10:00 PM</p>
+        </section>
+
+        <div class="overlay" onclick="hideLargeImage()"></div>
+    <img src="mango sticky rice 2.jpg" alt="Mango Sticky Rice Large" class="dessert-img-large">
+        <script>
+            function showLargeImage() {
+                document.querySelector('.dessert-img-large').style.display = 'block';
+                document.querySelector('.overlay').style.display = 'block';
+            }
+    
+            function hideLargeImage() {
+                document.querySelector('.dessert-img-large').style.display = 'none';
+                document.querySelector('.overlay').style.display = 'none';
+            }
+        </script>
+
+    <footer>
+        <p>&copy; 2025 COCA Restaurant. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com/cocarestaurant"><img src="Facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/cocarestaurant"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/cocarestaurant"><img src="Twitter.png" alt="Twitter"></a>
+        </div>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+</body>
+</html>
